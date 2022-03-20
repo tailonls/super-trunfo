@@ -1,6 +1,6 @@
 var carta1 = {
-  nome: "Bulbasauro",
-  imagem: "imagens/bulbasauro.jpg",
+  nome: "Fofão",
+  imagem: "imagens/fofao.jpg",
   atributos: {
     ataque: 7,
     defesa: 8,
@@ -40,7 +40,7 @@ var carta4 = {
 
 var carta5 = {
   nome: "Formiga atômica",
-  imagem: "imagens/thor.jpg",
+  imagem: "imagens/formiga.jpg",
   atributos: {
     ataque: 4,
     defesa: 10,
@@ -50,7 +50,7 @@ var carta5 = {
 
 var carta6 = {
   nome: "Thor",
-  imagem: "imagens/formiga.jpg",
+  imagem: "imagens/thor.jpg",
   atributos: {
     ataque: 5,
     defesa: 8,
@@ -58,19 +58,29 @@ var carta6 = {
   }
 };
 
-var cartas = [carta1, carta2, carta3, carta4, carta5, carta6];
+var carta7 = {
+  nome: "Valdivia",
+  imagem: "imagens/valdivia.jpg",
+  atributos: {
+    ataque: 9,
+    defesa: 2,
+    magia: 8
+  }
+};
+
+var cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7];
 var cartaMaquina;
 var cartaJogador;
 
 function sortearCarta() {
   resetarCartas();
-  var indiceCartaMaquina = parseInt(Math.random() * 6);
+  var indiceCartaMaquina = parseInt(Math.random() * 7);
   cartaMaquina = cartas[indiceCartaMaquina];
 
-  var indiceCartaJogador = parseInt(Math.random() * 6);
+  var indiceCartaJogador = parseInt(Math.random() * 7);
   // Condição para não pegar carta igual
   while (indiceCartaJogador == indiceCartaMaquina) {
-    indiceCartaJogador = parseInt(Math.random() * 6);
+    indiceCartaJogador = parseInt(Math.random() * 7);
   }
   cartaJogador = cartas[indiceCartaJogador];
 
