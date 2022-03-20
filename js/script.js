@@ -153,7 +153,7 @@ function exibirCartaMaquina(){
   divCartaMaquina.style.backgroundImage ="url("+cartaMaquina.imagem+")";
   //divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
   var moldura =
-    '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
+    '<img src="imagens/template_carta.png" style=" width: inherit; height: inherit; position: absolute;">';
   
   var tagHTML = "<div id='opcoes' class='carta-status'>";
   var opcoesTexto = "";
